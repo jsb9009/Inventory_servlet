@@ -34,6 +34,11 @@
       </tr>
       <%
 
+
+
+        //TODO Move all the backend functionalities to the backend layer (servelet)
+        // Here keep only the frontend designs, logics
+
         if(request.getParameter("registeritemform")!=null) {
 
 
