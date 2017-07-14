@@ -12,12 +12,6 @@
     <title></title>
 </head>
 <body>
-<%@page import="java.sql.ResultSet" %>
-<%@page import="java.sql.Statement" %>
-<%@page import="java.sql.Connection" %>
-<%@page import="java.sql.DriverManager" %>
-
-
 <form method="post">
 
   <td><input type="button" name="home" value="Back"  onclick="location.href='index.jsp'">

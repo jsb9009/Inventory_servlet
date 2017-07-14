@@ -7,14 +7,11 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.swing.*;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -33,10 +30,7 @@ public class Show_assignation_server extends HttpServlet {
             Statement stmt = conn.createStatement();
             ResultSet rs = stmt.executeQuery(query);
 
-            // List ll = new LinkedList();
-
             List<ItemDto> ll = new ArrayList<ItemDto>();
-
 
             while(rs.next()){
 

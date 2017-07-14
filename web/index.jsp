@@ -12,7 +12,6 @@
   </head>
   <body>
 
-
   <h3>  <a href="Register_items.jsp">Register Items</a> </h3>
   <h3>  <a href="Register_employees.jsp">Register Employees</a> </h3>
   <h3>  <a href="Assign_items.jsp">Assign Items</a> </h3>
