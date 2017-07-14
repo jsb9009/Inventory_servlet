@@ -11,6 +11,6 @@ import sample.dto.ItemDto;
  * providing an abstraction for the employee related data
  */
 public interface EmployeeDao {
-    //FIXME No need o public access modifier for interface methods.Remove
-    public ItemDto createEmployee(EmployeeDto employeeDtoDto);
+
+    ItemDto createEmployee(EmployeeDto employeeDtoDto);
 }

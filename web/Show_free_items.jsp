@@ -35,6 +35,8 @@
 
 </table>
 
+<br>
+
 <form method="post">
 
   <td><input type="button" name="home" value="Back"  onclick="location.href='index.jsp'">
