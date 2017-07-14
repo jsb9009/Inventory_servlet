@@ -1,4 +1,3 @@
-<%@ page import="sample.Welcome" %>
 <%--
   Created by IntelliJ IDEA.
   User: jaliya
@@ -17,7 +16,7 @@
   <h3>  <a href="Register_items.jsp">Register Items</a> </h3>
   <h3>  <a href="Register_employees.jsp">Register Employees</a> </h3>
   <h3>  <a href="Assign_items.jsp">Assign Items</a> </h3>
-  <h3>  <a href="Show_assignation.jsp">Show Assignation</a> </h3>
+  <h3>  <a href="http://localhost:8080/Inventory_servlet_war_exploded/ShowAssignation">Show Assignation</a> </h3>
 
 
   </body>

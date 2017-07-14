@@ -18,7 +18,7 @@
 
 <div>
   <h1> Assign the items here </h1>
-  <form name="assignitemform" action="Assign_items.jsp" method="POST">
+  <form name="assignitemform" action="http://localhost:8080/Inventory_servlet_war_exploded/AssignItem" method="POST">
     <table border="0">
       <tbody>
       <tr>
@@ -34,7 +34,7 @@
       </tr>
       <%
 
-        if(request.getParameter("registeritemform")!=null) {
+        /* if(request.getParameter("employeenumber")!=null && request.getParameter("itemnumber")!=null) {
 
 
           String employeeNumber = request.getParameter("employeenumber");
@@ -54,7 +54,7 @@
             throw new ServletException("Error in assignation", e);
 
           }
-        }
+        } */
       %>
 
       <tr>

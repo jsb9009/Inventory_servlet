@@ -19,6 +19,7 @@ public class DBConnector {
             Class.forName(Driver);
             con = DriverManager.getConnection(Url, Username, Password);
         } catch (Exception e) {
+            e.printStackTrace();
             throw new RuntimeException("Error in DBConnector");
         }
         return con;
