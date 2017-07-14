@@ -16,7 +16,7 @@
 
 <div>
   <h1> Assign the items here </h1>
-  <form name="assignitemform" action="http://localhost:8080/Inventory_servlet_war_exploded/AssignItem" method="POST">
+  <form name="assignitemform" action="AssignItem" method="POST">
     <table border="0">
       <tbody>
       <tr>

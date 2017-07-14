@@ -15,8 +15,8 @@
 
 <div>
   <h1> Register the employees here </h1>
-  <%--Remove host/port from the action URL--%>
-  <form name="registeremployeeform" action="http://localhost:8080/Inventory_servlet_war_exploded/RegEmployee" method="POST">
+
+  <form name="registeremployeeform" action="RegEmployee" method="POST">
     <table border="0">
       <tbody>
       <tr>

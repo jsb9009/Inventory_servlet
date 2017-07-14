@@ -14,7 +14,7 @@
 <div>
     <h1> Register the items here </h1>
 
-    <form name="registeritemform" action="http://localhost:8080/Inventory_servlet_war_exploded/RegItem" method="POST">
+    <form name="registeritemform" action="RegItem" method="POST">
         <table border="0">
             <tbody>
             <tr>
