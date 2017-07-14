@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: jaliya
-  Date: 7/12/17
-  Time: 11:53 AM
+  Date: 7/14/17
+  Time: 2:41 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -13,21 +13,22 @@
 </head>
 <body>
 
-<h2> Assigned items are </h2>
+<h2> Free items are </h2>
 
-<table border="3">
+<table border="2">
   <tr>
     <th>Item</th>
     <th>Item Type</th>
-    <th>Employee</th>
+    <th>Index Number</th>
 
   </tr>
 
-  <c:forEach items="${accountList}" var="item">
+  <c:forEach items="${accountListFree}" var="item1">
     <tr>
-      <td>${item.itemNumber}</td>
-      <td>${item.itemName}</td>
-      <td>${item.itemType}</td>
+      <td>${item1.itemNumber}</td>
+      <td>${item1.itemName}</td>
+      <td>${item1.itemType}</td>
+
     </tr>
 
   </c:forEach>
@@ -41,5 +42,3 @@
 
 </body>
 </html>
-
-

@@ -12,22 +12,14 @@
     <title></title>
 </head>
 <body>
-<%@page import="java.sql.ResultSet" %>
-<%@page import="java.sql.Statement" %>
-<%@page import="java.sql.Connection" %>
-<%@page import="java.sql.DriverManager" %>
 
-
-<form method="post">
-
-  <td><input type="button" name="home" value="Back"  onclick="location.href='index.jsp'">
-</form>
+<h2> Assigned items are </h2>
 
 <table border="3">
   <tr>
-    <td>Item</td>
-    <td>Item Type</td>
-    <td>Employee</td>
+    <th>Item</th>
+    <th>Item Type</th>
+    <th>Employee</th>
 
   </tr>
 
@@ -42,6 +34,10 @@
 
 </table>
 
+<form method="post">
+
+  <td><input type="button" name="home" value="Back"  onclick="location.href='index.jsp'">
+</form>
 
 </body>
 </html>
