@@ -13,6 +13,7 @@ import java.sql.Statement;
 /**
  * Created by jaliya on 7/13/17.
  */
+//FIXME Java class should use camel case naming convention
 @WebServlet("/RegEmployee")
 public class Register_employees_server extends HttpServlet {
 

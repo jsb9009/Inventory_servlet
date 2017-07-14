@@ -7,6 +7,7 @@ import java.sql.DriverManager;
  * Created by jaliya on 7/12/17.
  */
 
+//TODO move to util package
 public class DBConnector {
     private final static String Driver = "com.mysql.jdbc.Driver";
     private final static String Url = "jdbc:mysql://localhost:3306/inventory_servlet";

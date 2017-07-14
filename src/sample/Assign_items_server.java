@@ -14,11 +14,13 @@ import java.sql.Statement;
  * Created by jaliya on 7/13/17.
  */
 
+//TODO move servelets to a new package called servelets
 @WebServlet("/AssignItem")
 public class Assign_items_server extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        //TODO move DB operations to DAO level
         if(request.getParameter("employeenumber")!=null && request.getParameter("itemnumber")!=null) {
 
 
