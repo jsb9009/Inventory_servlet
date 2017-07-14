@@ -35,7 +35,7 @@ public class EmployeeDaoImpl implements EmployeeDao {
             con.close();
         } catch (Exception e) {
 
-            JOptionPane.showMessageDialog(null, e.getMessage(), "ERROR", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, e.getMessage(), "Error occurred while saving.Please try again later", JOptionPane.ERROR_MESSAGE);
         }
 
         return null;

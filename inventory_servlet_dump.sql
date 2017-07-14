@@ -28,7 +28,7 @@ CREATE TABLE `employees` (
   `employee_name` varchar(20) DEFAULT NULL,
   `position` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`index_no`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +37,7 @@ CREATE TABLE `employees` (
 
 LOCK TABLES `employees` WRITE;
 /*!40000 ALTER TABLE `employees` DISABLE KEYS */;
-INSERT INTO `employees` VALUES ('HMSK/2012/06/0001',1,'Parinda','SE'),('HMSK/2014/06/0002',2,'Udara','SE');
+INSERT INTO `employees` VALUES ('HMSK/2012/06/0001',1,'Parinda','SE'),('HMSK/2014/06/0002',2,'Udara','SE'),('HMSK/2014/06/0007',10,'Sadupa','SSE');
 /*!40000 ALTER TABLE `employees` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -57,7 +57,7 @@ CREATE TABLE `items` (
   PRIMARY KEY (`index_no`),
   KEY `assignation` (`assignation`),
   CONSTRAINT `items_ibfk_1` FOREIGN KEY (`assignation`) REFERENCES `employees` (`index_no`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -66,6 +66,7 @@ CREATE TABLE `items` (
 
 LOCK TABLES `items` WRITE;
 /*!40000 ALTER TABLE `items` DISABLE KEYS */;
+INSERT INTO `items` VALUES ('HSMK/2011/01/PC/001',18,'CPU','computer equipment',NULL),('HSMK/2015/04/PC/004',19,'monitor','computer equipment',NULL),('HSMK/2015/08/PC/002',20,'key board','computer equipment',NULL),('HSMK/2017/03/KIT/007',21,'water filter','kitchen item',2),('HSMK/2015/01/OFF/004',22,'office table','office equipment',NULL);
 /*!40000 ALTER TABLE `items` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -78,4 +79,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-07-13 11:08:07
+-- Dump completed on 2017-07-14 18:13:51

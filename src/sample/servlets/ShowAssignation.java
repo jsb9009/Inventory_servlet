@@ -67,7 +67,7 @@ public class ShowAssignation extends HttpServlet {
 
         } catch (Exception e) {
 
-            throw new ServletException("Error in showing current assignation", e);
+            throw new ServletException("Error in showing free items", e);
 
         }
 

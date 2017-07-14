@@ -38,7 +38,7 @@ public class ItemDaoImpl implements ItemDao {
 
         } catch (Exception e) {
 
-            JOptionPane.showMessageDialog(null, e.getMessage(), "ERROR", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, e.getMessage(), "Error occurred while saving.Please try again later", JOptionPane.ERROR_MESSAGE);
         }
         return null;
 
@@ -61,7 +61,7 @@ public class ItemDaoImpl implements ItemDao {
 
         } catch (Exception e) {
 
-            JOptionPane.showMessageDialog(null, e.getMessage(), "ERROR", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, e.getMessage(), "Error occurred while assigning.Please try again later", JOptionPane.ERROR_MESSAGE);
 
         }
 
@@ -80,7 +80,7 @@ public class ItemDaoImpl implements ItemDao {
 
         } catch (Exception e) {
 
-            JOptionPane.showMessageDialog(null, e.getMessage(), "ERROR", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, e.getMessage(), "Error occurred while showing results", JOptionPane.ERROR_MESSAGE);
 
             return null;
         }

@@ -32,9 +32,9 @@
       </tr>
 
       <tr>
-        <td align="right"><input type="reset" value="Clear" name="reset" /></td>
-        <td><input type="submit" value="Assign" name="submit" /></td>
-        <td><input type="button" name="home" value="Back"  onclick="location.href='index.jsp'">
+        <td><input type="button" name="home" style=" float: left" value="Back" onclick="location.href='index.jsp'"></td>
+        <td><input type="submit" style=" float: right" value="Save" name="submit"/>
+          <input type="reset" style=" float: right" value="Clear" name="reset"/></td>
       </tr>
       </tbody>
     </table>

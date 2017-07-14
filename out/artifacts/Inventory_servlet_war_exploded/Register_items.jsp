@@ -14,7 +14,7 @@
 <div>
     <h1> Register the items here </h1>
 
-    <form name="registeritemform" action="http://localhost:8080/Inventory_servlet_war_exploded/RegItem" method="POST">
+    <form name="registeritemform" action="RegItem" method="POST">
         <table border="0">
             <tbody>
             <tr>
@@ -33,10 +33,10 @@
             <tr></tr>
 
             <tr>
-                <td><input type="reset" style=" float: right" value="Clear" name="reset"/></td>
-                <td><input type="submit" value="Save" name="submit"/></td>
-                <td><input type="button" name="home" value="Back" onclick="location.href='index.jsp'">
-                </td>
+                <td><input type="button" name="home" style=" float: left" value="Back" onclick="location.href='index.jsp'"></td>
+                <td><input type="submit" style=" float: right" value="Save" name="submit"/>
+                    <input type="reset" style=" float: right" value="Clear" name="reset"/></td>
+
             </tr>
             </tbody>
         </table>
