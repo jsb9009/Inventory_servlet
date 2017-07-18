@@ -33,8 +33,8 @@ public class ItemDaoImpl implements ItemDao {
 
         try {
             Statement stmt = con.createStatement();
-            stmt.executeUpdate("INSERT INTO items (item_no,item_name,item_type) VALUES ('" + itemDto.getItemNumber() + "','" + itemDto.getItemName() + "','" + itemDto.getItemType() + "')");    //polymorphism   //encapsulation
-            JOptionPane.showMessageDialog(null, "Item successfully registered");    //polymorphism
+            stmt.executeUpdate("INSERT INTO items (item_no,item_name,item_type) VALUES ('" + itemDto.getItemNumber() + "','" + itemDto.getItemName() + "','" + itemDto.getItemType() + "')");
+            JOptionPane.showMessageDialog(null, "Item successfully registered");
 
         } catch (Exception e) {
 

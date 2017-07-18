@@ -9,15 +9,17 @@ package sample.dto;
  */
 public class EmployeeDto {
 
+    private String employeeNumber;
+    private String employeeName;
+    private String position;
+
+
     public EmployeeDto(String employeeNumber, String employeeName, String position) {
         this.employeeNumber = employeeNumber;
         this.employeeName = employeeName;
         this.position = position;
     }
 
-    private String employeeNumber;
-    private String employeeName;
-    private String position;
 
     public String getEmployeeNumber() {
 

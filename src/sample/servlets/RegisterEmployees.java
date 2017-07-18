@@ -29,8 +29,8 @@ public class RegisterEmployees extends HttpServlet {
             String position = request.getParameter("position");
 
             EmployeeDto employeeDto = new EmployeeDto(employeeNumber,employeeName,position);
-            EmployeeDao itemDao = new EmployeeDaoImpl();
-            itemDao.createEmployee(employeeDto);
+            EmployeeDao employeeDao = new EmployeeDaoImpl();
+            employeeDao.createEmployee(employeeDto);
 
             response.sendRedirect("Register_employees.jsp");
     }

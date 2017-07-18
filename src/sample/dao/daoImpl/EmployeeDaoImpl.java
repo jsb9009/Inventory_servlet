@@ -26,11 +26,11 @@ public class EmployeeDaoImpl implements EmployeeDao {
      * @param employeeDto
      * @return null
      */
-    public ItemDto createEmployee(EmployeeDto employeeDto) {
+    public EmployeeDto createEmployee(EmployeeDto employeeDto) {
 
         try {
-            Statement stmt = con.createStatement();           //inheritance
-            stmt.executeUpdate("INSERT INTO employees (employee_no,employee_name,position) VALUES ('" + employeeDto.getEmployeeNumber() + "','" + employeeDto.getEmployeeName() + "','" + employeeDto.getEmployeePosition() + "')");  //polymorphism  //encapsulation
+            Statement stmt = con.createStatement();
+            stmt.executeUpdate("INSERT INTO employees (employee_no,employee_name,position) VALUES ('" + employeeDto.getEmployeeNumber() + "','" + employeeDto.getEmployeeName() + "','" + employeeDto.getEmployeePosition() + "')");
             JOptionPane.showMessageDialog(null, "Employee successfully registered");
             con.close();
         } catch (Exception e) {

@@ -12,5 +12,5 @@ import sample.dto.ItemDto;
  */
 public interface EmployeeDao {
 
-    ItemDto createEmployee(EmployeeDto employeeDtoDto);
+    EmployeeDto createEmployee(EmployeeDto employeeDtoDto);
 }
